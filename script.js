@@ -3,11 +3,11 @@
 /*
     *Cada vez que accedo al documento uso DOM Document Object Managament
 */
-import { updateSelector, getSelectedGroup } from "/utils/listScript.js";
-import { crearColorSelector } from "/utils/listScriptColors.js";
-import categorias from "/utils/categorias.js";
-import { generar_dict } from "/utils/jsonGenerator.js";
-import { getSelectedColor } from "/utils/listScriptColors.js";
+import { updateSelector, getSelectedGroup } from "./src/listScript.js";
+import { crearColorSelector } from "./src/listScriptColors.js";
+import categorias from "./src/categorias.js";
+import { generar_dict } from "./src/jsonGenerator.js";
+import { getSelectedColor } from "./src/listScriptColors.js";
 
 var fila_actual;
 var separar = document.getElementById('separar')
