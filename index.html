@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <!-- include font awesome -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.js"></script>
+</head>
+
+<body>
+  <div class="allcontent">
+  <div class="wrapper">
+    <div id="contenedor">
+    <div id="datos">
+      <form id="fraseForm">
+        <input type="text" id="frase" size="750" placeholder="Frase" required >
+      </form>
+    </div>
+  </div>
+    <div class="controls" id="controles">
+      <a id="separar"><i class="fa fa-scissors"></i> Separar</a>
+    </div>
+    <div class="lines" id="lineas">
+    </div>
+    <div class="moves" id="desplazamiento">
+    </div>
+  </div>
+
+  <div class="painter_options">
+    <div class="left_options">
+      <!-- Si no se quiere aqui poner no_visible de id -->
+      <a class="clickable" href="#" id="guardar">
+        <i class="fa fa-download"></i>
+        Guardar
+      </a>
+      <a class="clickable" href="#" id="borrar">
+        <i class="fa fa-eraser"></i>
+        Borrar Linea
+      </a>
+    </div>
+    <div class="listWrapper">
+      <div class="select-btn">
+          <p></p>
+          <span id="selector">Selecciona tipo</span>
+          <i class="fa fa-angle-down"></i>
+      </div>
+  
+      <div class="content">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input class="Search" type="text" placeholder="Search">
+        </div>
+        <ul id="options">
+        </ul>
+      </div>
+    </div>
+
+    <div class="right_options">
+      <a class="clickable" id="anotar">
+        <i class="fa fa-pencil"></i>
+        Anotar
+      </a>
+    </div>
+
+    <div class="listColorWrapper">
+      <div class="select-color">
+          <p></p>
+          <span id="colorSelector">Selecciona color</span>
+          <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="colorContent">
+        <ul id="colorOptions">
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+
+
+</div>
+  
+<script src="script.js" type="module" ></script>
+<script src="/utils/listScript.js" type="module" ></script>
+<script src="/utils/categorias.js" type="module"></script>
+</body>
+</html>
